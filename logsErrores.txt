@@ -1,0 +1,266 @@
+Sat May 27 2023 08:29:03 GMT-0500 (hora estándar de Colombia) - producto no encontrado
+[object Object]
+[object Object]
+[object Object]
+Error: producto no encontrado
+    at ProductsService.updatePartialProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:54:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:95:44
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:421:3)
+Sat May 27 2023 08:30:27 GMT-0500 (hora estándar de Colombia) - [object Object]
+[object Object]
+Error: producto no encontrado
+    at ProductsService.updatePartialProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:54:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:95:44
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:421:3)
+Sat May 27 2023 08:31:50 GMT-0500 (hora estándar de Colombia) - producto no encontrado
+Error: producto no encontrado
+    at ProductsService.updatePartialProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:54:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:95:44
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:421:3)
+Sat May 27 2023 08:33:36 GMT-0500 (hora estándar de Colombia) - Cannot set properties of undefined (setting 'nombre')
+TypeError: Cannot set properties of undefined (setting 'nombre')
+    at ProductsService.updateProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:65:37)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:119:44
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:421:3)
+Sat May 27 2023 08:34:37 GMT-0500 (hora estándar de Colombia) - producto no encontrado
+Error: producto no encontrado
+    at ProductsService.updateProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:66:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:119:44
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:421:3)
+Sat May 27 2023 08:34:39 GMT-0500 (hora estándar de Colombia) - producto no encontrado
+Error: producto no encontrado
+    at ProductsService.updateProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:66:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:119:44
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:421:3)
+Sat May 27 2023 08:34:45 GMT-0500 (hora estándar de Colombia) - producto no encontrado
+Error: producto no encontrado
+    at ProductsService.updatePartialProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:54:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:95:44
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:421:3)
+Sat May 27 2023 08:37:36 GMT-0500 (hora estándar de Colombia) - producto no encontrado
+Error: producto no encontrado
+    at ProductsService.deleteProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:78:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:140:42
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:421:3)
+Sat May 27 2023 08:37:38 GMT-0500 (hora estándar de Colombia) - producto no encontrado
+Error: producto no encontrado
+    at ProductsService.deleteProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:78:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:140:42
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:421:3)
+Sat May 27 2023 08:37:46 GMT-0500 (hora estándar de Colombia) - producto no encontrado
+Error: producto no encontrado
+    at ProductsService.deleteProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:78:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:140:42
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:421:3)
+Sat May 27 2023 08:48:12 GMT-0500 (hora estándar de Colombia) - producto ya existe
+Error: producto ya existe
+    at ProductsService.createProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:48:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:68:40
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:175:3)
+Sat May 27 2023 08:48:18 GMT-0500 (hora estándar de Colombia) - producto no encontrado
+Error: producto no encontrado
+    at ProductsService.deleteProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:83:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:138:42
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:421:3)
+Sat May 27 2023 08:48:42 GMT-0500 (hora estándar de Colombia) - producto ya existe
+Error: producto ya existe
+    at ProductsService.createProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:48:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:68:40
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:175:3)
+Sat Jun 03 2023 08:54:23 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 08:54:37 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 08:56:15 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 08:57:11 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 08:58:39 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 08:58:41 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 08:58:42 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 08:58:50 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 08:59:37 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 08:59:44 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 08:59:44 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 08:59:45 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 08:59:46 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 09:01:13 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 09:01:21 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 09:01:36 GMT-0500 (hora estándar de Colombia) - Failed to decode param '%'
+URIError: Failed to decode param '%'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:172:12)
+    at Layer.match (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:148:15)
+    at matchLayer (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:585:18)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:226:15)
+    at Function.handle (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:286:9
+Sat Jun 03 2023 09:05:11 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 09:05:31 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 09:05:40 GMT-0500 (hora estándar de Colombia) - "nombre" must only contain alpha-numeric characters
+ValidationError: "nombre" must only contain alpha-numeric characters
+Sat Jun 03 2023 09:06:33 GMT-0500 (hora estándar de Colombia) - "nombre" must only contain alpha-numeric characters. "precio" must be a number. "imagen" is required
+ValidationError: "nombre" must only contain alpha-numeric characters. "precio" must be a number. "imagen" is required
+Sat Jun 03 2023 09:06:46 GMT-0500 (hora estándar de Colombia) - "nombre" must only contain alpha-numeric characters. "precio" must be greater than or equal to 100. "imagen" is required
+ValidationError: "nombre" must only contain alpha-numeric characters. "precio" must be greater than or equal to 100. "imagen" is required
+Sat Jun 03 2023 09:07:15 GMT-0500 (hora estándar de Colombia) - "nombre" length must be at least 3 characters long. "precio" must be greater than or equal to 100. "imagen" is required
+ValidationError: "nombre" length must be at least 3 characters long. "precio" must be greater than or equal to 100. "imagen" is required
+Sat Jun 03 2023 09:07:41 GMT-0500 (hora estándar de Colombia) - Failed to decode param '%'
+URIError: Failed to decode param '%'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:172:12)
+    at Layer.match (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:148:15)
+    at matchLayer (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:585:18)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:226:15)
+    at Function.handle (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:286:9
+Sat Jun 03 2023 09:07:52 GMT-0500 (hora estándar de Colombia) - "nombre" length must be at least 3 characters long. "precio" must be greater than or equal to 100. "imagen" is required
+ValidationError: "nombre" length must be at least 3 characters long. "precio" must be greater than or equal to 100. "imagen" is required
+Sat Jun 03 2023 09:08:20 GMT-0500 (hora estándar de Colombia) - Unexpected string in JSON at position 48
+SyntaxError: Unexpected string in JSON at position 48
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)
+    at invokeCallback (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:539:35)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Sat Jun 03 2023 09:08:24 GMT-0500 (hora estándar de Colombia) - "nombre" length must be at least 3 characters long. "precio" must be greater than or equal to 100
+ValidationError: "nombre" length must be at least 3 characters long. "precio" must be greater than or equal to 100
+Sat Jun 03 2023 09:08:38 GMT-0500 (hora estándar de Colombia) - "nombre" length must be at least 3 characters long
+ValidationError: "nombre" length must be at least 3 characters long
+Sat Jun 03 2023 09:08:56 GMT-0500 (hora estándar de Colombia) - "precio" must be a number
+ValidationError: "precio" must be a number
+Sat Jun 03 2023 09:09:17 GMT-0500 (hora estándar de Colombia) - "nombre" length must be less than or equal to 30 characters long
+ValidationError: "nombre" length must be less than or equal to 30 characters long
+Sat Jun 03 2023 09:09:33 GMT-0500 (hora estándar de Colombia) - "imagen" must be a valid uri
+ValidationError: "imagen" must be a valid uri
+Sat Jun 03 2023 09:09:44 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jun 03 2023 09:09:54 GMT-0500 (hora estándar de Colombia) - producto no encontrado
+Error: producto no encontrado
+    at ProductsService.searchProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:39:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:56:37
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\middlewares\validator.handler.js:10:13
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+Sat Jun 03 2023 09:17:25 GMT-0500 (hora estándar de Colombia) - "precio" must be a number
+ValidationError: "precio" must be a number
