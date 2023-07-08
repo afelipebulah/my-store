@@ -264,3 +264,63 @@ Error: producto no encontrado
     at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
 Sat Jun 03 2023 09:17:25 GMT-0500 (hora estándar de Colombia) - "precio" must be a number
 ValidationError: "precio" must be a number
+Sat Jul 08 2023 08:06:37 GMT-0500 (hora estándar de Colombia) - "size" must be a number
+ValidationError: "size" must be a number
+Sat Jul 08 2023 08:07:38 GMT-0500 (hora estándar de Colombia) - "size" must be a positive number. "size" must be greater than or equal to 1
+ValidationError: "size" must be a positive number. "size" must be greater than or equal to 1
+Sat Jul 08 2023 08:07:48 GMT-0500 (hora estándar de Colombia) - "size" must be a positive number. "size" must be greater than or equal to 1
+ValidationError: "size" must be a positive number. "size" must be greater than or equal to 1
+Sat Jul 08 2023 08:08:23 GMT-0500 (hora estándar de Colombia) - "size" must be a number
+ValidationError: "size" must be a number
+Sat Jul 08 2023 08:08:42 GMT-0500 (hora estándar de Colombia) - "size" must be a number
+ValidationError: "size" must be a number
+Sat Jul 08 2023 08:08:43 GMT-0500 (hora estándar de Colombia) - "size" must be a number
+ValidationError: "size" must be a number
+Sat Jul 08 2023 08:08:44 GMT-0500 (hora estándar de Colombia) - "size" must be a number
+ValidationError: "size" must be a number
+Sat Jul 08 2023 08:08:48 GMT-0500 (hora estándar de Colombia) - "size" must be a number
+ValidationError: "size" must be a number
+Sat Jul 08 2023 08:08:49 GMT-0500 (hora estándar de Colombia) - "size" must be a number
+ValidationError: "size" must be a number
+Sat Jul 08 2023 08:08:50 GMT-0500 (hora estándar de Colombia) - "size" must be a number
+ValidationError: "size" must be a number
+Sat Jul 08 2023 08:08:50 GMT-0500 (hora estándar de Colombia) - "size" must be a number
+ValidationError: "size" must be a number
+Sat Jul 08 2023 08:08:51 GMT-0500 (hora estándar de Colombia) - "size" must be a number
+ValidationError: "size" must be a number
+Sat Jul 08 2023 08:09:03 GMT-0500 (hora estándar de Colombia) - "size" must be a positive number. "size" must be greater than or equal to 1
+ValidationError: "size" must be a positive number. "size" must be greater than or equal to 1
+Sat Jul 08 2023 08:10:34 GMT-0500 (hora estándar de Colombia) - "size" must be a positive number. "size" must be greater than or equal to 1
+ValidationError: "size" must be a positive number. "size" must be greater than or equal to 1
+Sat Jul 08 2023 08:13:23 GMT-0500 (hora estándar de Colombia) - this.products.length is not a function
+TypeError: this.products.length is not a function
+    at ProductsService.getListProducts (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:34:43)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:37:38
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\middlewares\validator.handler.js:10:13
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
+Sat Jul 08 2023 08:14:52 GMT-0500 (hora estándar de Colombia) - "size" must be a positive number. "size" must be greater than or equal to 1
+ValidationError: "size" must be a positive number. "size" must be greater than or equal to 1
+Sat Jul 08 2023 08:25:59 GMT-0500 (hora estándar de Colombia) - "size" must be a positive number. "size" must be greater than or equal to 1
+ValidationError: "size" must be a positive number. "size" must be greater than or equal to 1
+Sat Jul 08 2023 08:26:05 GMT-0500 (hora estándar de Colombia) - "size" must be a number
+ValidationError: "size" must be a number
+Sat Jul 08 2023 08:30:04 GMT-0500 (hora estándar de Colombia) - "size" must be less than or equal to 100
+ValidationError: "size" must be less than or equal to 100
+Sat Jul 08 2023 08:30:07 GMT-0500 (hora estándar de Colombia) - "size" must be less than or equal to 100
+ValidationError: "size" must be less than or equal to 100
+Sat Jul 08 2023 08:30:17 GMT-0500 (hora estándar de Colombia) - "size" must be less than or equal to 100
+ValidationError: "size" must be less than or equal to 100
+Sat Jul 08 2023 08:30:33 GMT-0500 (hora estándar de Colombia) - "size" must be less than or equal to 100
+ValidationError: "size" must be less than or equal to 100
+Sat Jul 08 2023 08:30:39 GMT-0500 (hora estándar de Colombia) - "size" must be a positive number. "size" must be greater than or equal to 1
+ValidationError: "size" must be a positive number. "size" must be greater than or equal to 1
+Sat Jul 08 2023 08:30:45 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number
+Sat Jul 08 2023 08:31:20 GMT-0500 (hora estándar de Colombia) - "id" must be a number
+ValidationError: "id" must be a number

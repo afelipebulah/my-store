@@ -1,10 +1,12 @@
 const express = require('express');
 
-const ProductsService = require('./../services/product.services');
 const validatorHandler = require('./../middlewares/validator.handler');
-const { createProductSchema, updatePartialProductSchema, updateProductSchema, getProductSchema } = require('./../schemas/product.schema');
-const router = express.Router();
+const { createProductSchema, updatePartialProductSchema, updateProductSchema, getProductSchema, getListProductSchema, generateProductSchema } = require('./../schemas/product.schema');
+const ProductsService = require('./../services/product.services');
+
 const service = new ProductsService();
+
+const router = express.Router();
 
 router.get('/', (req, res) => {
   res.json({
@@ -13,40 +15,25 @@ router.get('/', (req, res) => {
   });
 });
 
-router.get('/generate', async (req, res) => {
-  const { size } = req.query;
-
-  if (size >= 0 || typeof size === 'undefined') {
+router.get('/generate',
+  validatorHandler(generateProductSchema, 'query'),
+  async (req, res) => {
+    const { size } = req.query;
     const products = await service.generate(size);
     res.status(200).json(products);
-  } else {
-    res.status(400).json({
-      size,
-      message: `tamaño inválido`
-    });
-  }
-});
+  });
 
-router.get('/list', async (req, res, next) => {
-  const { size } = req.query;
-  try {
-    const products = await service.getListProducts();
-    if (size) {
-      if (size >= 0) {
-        res.status(200).json(products.slice(0, size));
-      } else {
-        res.status(400).json({
-          size,
-          message: `tamaño inválido`
-        });
-      }
-    } else {
+router.get('/list',
+  validatorHandler(getListProductSchema, 'query'),
+  async (req, res, next) => {
+    const { size } = req.query;
+    try {
+      const products = await service.getListProducts(size);
       res.status(200).json(products);
+    } catch (error) {
+      next(error);
     }
-  } catch (error) {
-    next(error);
-  }
-});
+  });
 
 router.get('/search/:id',
   validatorHandler(getProductSchema, 'params'),

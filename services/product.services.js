@@ -29,8 +29,8 @@ class ProductsService {
         return this.products;
     }
 
-    async getListProducts(){
-        return this.products;
+    async getListProducts(size){
+        return this.products.slice(0, size || this.products.length);
     }
 
     async searchProduct(id){
