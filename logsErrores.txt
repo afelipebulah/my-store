@@ -326,3 +326,15 @@ Sat Jul 08 2023 08:31:20 GMT-0500 (hora estándar de Colombia) - "id" must be a 
 ValidationError: "id" must be a number
 Sat Jul 08 2023 13:54:47 GMT-0500 (hora estándar de Colombia) - "size" must be less than or equal to 100
 ValidationError: "size" must be less than or equal to 100
+Sat Jul 08 2023 14:05:13 GMT-0500 (hora estándar de Colombia) - producto no encontrado
+Error: producto no encontrado
+    at ProductsService.deleteProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\api\services\product.services.js:83:24)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\api\routes\products.router.js:109:44
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\api\middlewares\validator.handler.js:10:13
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\router\index.js:284:15
