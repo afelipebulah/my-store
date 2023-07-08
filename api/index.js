@@ -12,13 +12,6 @@ app.listen(port, () => {
   console.log(`api escuchando por el puerto: ${port}`);
 });
 
-app.get('/api', (req, res) => {
-  res.json({
-    "route":"/",
-    "version":"v0.0.1"
-  });
-});
-
 //Se define middleware nativo de express para procesar .json en peticione POST/PATCH
 app.use(express.json());
 app.use(cors());

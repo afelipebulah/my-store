@@ -324,3 +324,5 @@ Sat Jul 08 2023 08:30:45 GMT-0500 (hora estándar de Colombia) - "id" must be a 
 ValidationError: "id" must be a number
 Sat Jul 08 2023 08:31:20 GMT-0500 (hora estándar de Colombia) - "id" must be a number
 ValidationError: "id" must be a number
+Sat Jul 08 2023 13:54:47 GMT-0500 (hora estándar de Colombia) - "size" must be less than or equal to 100
+ValidationError: "size" must be less than or equal to 100
