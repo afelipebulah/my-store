@@ -5,14 +5,14 @@ const { logErrors, errorHandler, boomErrorHandler } = require('./middlewares/err
 const validatorHandler = require('./middlewares/validator.handler');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 //Se define el puerto de la aplicación
 app.listen(port, () => {
   console.log(`api escuchando por el puerto: ${port}`);
 });
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.json({
     "route":"/",
     "version":"v0.0.1"
