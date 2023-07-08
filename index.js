@@ -1,5 +1,6 @@
 const express = require('express');
 const routerApi = require('./routes');
+const cors = require('cors');
 const { logErrors, errorHandler, boomErrorHandler } = require('./middlewares/error.handler');
 const validatorHandler = require('./middlewares/validator.handler');
 
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 
 //Se define middleware nativo de express para procesar .json en peticione POST/PATCH
 app.use(express.json());
+app.use(cors());
 
 routerApi(app);
 
