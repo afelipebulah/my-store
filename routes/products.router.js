@@ -1,8 +1,8 @@
 const express = require('express');
 
-const validatorHandler = require('./../middlewares/validator.handler');
-const { createProductSchema, updatePartialProductSchema, updateProductSchema, getProductSchema, getListProductSchema, generateProductSchema } = require('./../schemas/product.schema');
-const ProductsService = require('./../services/product.services');
+const validatorHandler = require('../middlewares/validator.handler');
+const { createProductSchema, updatePartialProductSchema, updateProductSchema, getProductSchema, getListProductSchema, generateProductSchema } = require('../schemas/product.schema');
+const ProductsService = require('../services/product.services');
 
 const service = new ProductsService();
 
@@ -32,7 +32,7 @@ router.get('/list',
       res.status(200).json(products);
     } catch (error) {
       next(error);
-    }
+    } 
   });
 
 router.get('/search/:id',
@@ -51,11 +51,9 @@ router.post('/create',
   validatorHandler(createProductSchema, 'body'),
   async (req, res, next) => {
     const body = req.body;
-    const id = body.id;
     try {
       const newProduct = await service.createProduct(body);
       res.status(201).json({
-        id,
         message: `producto creado`,
         data: newProduct
       });
@@ -66,12 +64,12 @@ router.post('/create',
 
 router.patch('/update/:id',
   validatorHandler(getProductSchema, 'params'),
-  validatorHandler(updateProductSchema, 'body'),
+  validatorHandler(updatePartialProductSchema, 'body'),
   async (req, res, next) => {
     const { id } = req.params;
     const body = req.body;
     try {
-      const productUpdated = await service.updatePartialProduct(body, id);
+      const productUpdated = await service.updateProduct(body, id);
       res.json({
         id,
         message: 'producto actualizado',
@@ -84,7 +82,7 @@ router.patch('/update/:id',
 
 router.put('/update/:id',
   validatorHandler(getProductSchema, 'params'),
-  validatorHandler(updatePartialProductSchema, 'body'),
+  validatorHandler(updateProductSchema, 'body'),
   async (req, res, next) => {
     const { id } = req.params;
     const body = req.body;
@@ -104,9 +102,9 @@ router.delete('/delete/:id',
   validatorHandler(getProductSchema, 'params'),
   async (req, res, next) => {
     const { id } = req.params;
-
     try {
-      const productDeleted = await service.deleteProduct(id);
+      const productDeleted = await service.searchProduct(id);
+      await service.deleteProduct(id);
       res.status(200).json({
         message: 'producto eliminado',
         data: productDeleted
