@@ -35,14 +35,12 @@ class UserService {
     }
 
     async getListUsers(size){
-        const data = await this.users.findAll({
-            include: ['customer']
-        });
+        const data = await this.users.findAll();
         return data;
     }
 
     async searchUser(id){
-        const data = await this.users.findAll({where:{id:id}});
+        const data = await this.users.findByPk(id);
         if (data.length == 0){
             throw boom.notFound('Usuario no encontrado');
         }
@@ -57,10 +55,6 @@ class UserService {
 
     async updateUser(body,id){
         const User = await this.searchUser(id);
-        if (!User){
-            throw boom.notFound('Usuario no encontrado');
-        }
-
         const updatedUser = await User.update(body);
 
         return updatedUser;
@@ -68,10 +62,6 @@ class UserService {
 
     async deleteUser(id){
         const User = await this.searchUser(id);
-        if (!User){
-            throw boom.notFound('Usuario no encontrado');
-        }
-
         const deletedUser = await User.destroy();
 
         return deletedUser;

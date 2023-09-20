@@ -46,7 +46,8 @@ class OrderServices {
                 {
                     association: 'customer',
                     include: ['user']
-                }
+                },
+                'items'
             ]
         });
         if (!data){
@@ -57,6 +58,12 @@ class OrderServices {
 
     async create(body){        
         const newObject = await this.orders.create(body);
+        
+        return newObject;
+    }
+
+    async addItem(body){        
+        const newObject = await models.OrderProduct.create(body);
         
         return newObject;
     }

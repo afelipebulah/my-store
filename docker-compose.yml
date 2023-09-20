@@ -24,3 +24,10 @@ services:
     volumes:
       - ./mysql_data:/var/lib/mysql
 
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@mail.com
+      - PGADMIN_DEFAULT_PASSWORD=root
+    ports:
+      - 5050:80

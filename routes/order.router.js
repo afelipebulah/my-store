@@ -1,12 +1,13 @@
 const express = require('express');
 
 const validatorHandler = require('../middlewares/validator.handler');
-const { 
+const {
   createOrderSchema,
   updateOrderSchema,
   getOrderSchema,
   getListOrderSchema,
-  generateOrderSchema
+  generateOrderSchema,
+  addItemSchema
 } = require('../schemas/order.schema');
 const OrderServices = require('../services/order.services');
 
@@ -29,7 +30,7 @@ router.get('/generate',
       orders = await service.generate(size);
     } catch (error) {
       next(error);
-    } 
+    }
     res.status(200).json(orders);
   });
 
@@ -42,7 +43,7 @@ router.get('/list',
       res.status(200).json(orders);
     } catch (error) {
       next(error);
-    } 
+    }
   });
 
 router.get('/search/:id',
@@ -65,6 +66,21 @@ router.post('/create',
       const newObject = await service.create(body);
       res.status(201).json({
         message: `orden de compra creada`,
+        data: newObject
+      });
+    } catch (error) {
+      next(error);
+    }
+  })
+
+router.post('/add-item',
+  validatorHandler(addItemSchema, 'body'),
+  async (req, res, next) => {
+    const body = req.body;
+    try {
+      const newObject = await service.addItem(body);
+      res.status(201).json({
+        message: `item agregado`,
         data: newObject
       });
     } catch (error) {

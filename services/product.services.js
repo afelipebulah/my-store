@@ -16,17 +16,22 @@ class ProductsService {
         let limit = size || default_size;
         if(size > max_size) limit = max_size;
       
-        await this.products.truncate();
+        let data = await this.getListProducts();
 
-        for (let i = 1; i <= limit; i++) {
-            await this.products.create({
-            name : faker.commerce.productName(),
-            description: faker.random.words(3),
-            price : faker.commerce.price(100, 999, 0),
-            image : faker.image.imageUrl()
-          });
+        if(data.length == 0){
+            for (let i = 1; i <= limit; i++) {
+                await this.createProduct({
+                name : faker.commerce.productName(),
+                description: faker.random.words(3),
+                price : faker.commerce.price(100, 999, 0),
+                image : faker.image.imageUrl()
+              });
+            }
+        } else {
+            return data;
         }
-        const data = await this.products.findAll();
+        
+        data = await this.getListProducts();
 
         return data;
     }
