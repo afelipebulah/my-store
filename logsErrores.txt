@@ -103,3 +103,14 @@ TypeError: Cannot read properties of undefined (reading 'length')
     at ServerResponse.json (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\response.js:271:14)
     at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\order.router.js:67:23
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 23 2023 15:43:59 GMT-0500 (hora estándar de Colombia) - connect ECONNREFUSED 127.0.0.1:5432
+SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:5432
+    at Client._connectionCallback (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\dialects\postgres\connection-manager.js:131:24)
+    at Client._handleErrorWhileConnecting (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\pg\lib\client.js:327:19)
+    at Client._handleErrorEvent (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\pg\lib\client.js:337:19)
+    at Connection.emit (node:events:527:28)
+    at Socket.reportStreamError (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\pg\lib\connection.js:58:12)
+    at Socket.emit (node:events:527:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)

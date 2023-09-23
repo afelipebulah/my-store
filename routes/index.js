@@ -8,7 +8,7 @@ const clienteRouter = require('./cliente.router');
 
 function routerApi(app) {
     const router = express.Router();
-    //Se define la ruta por defecto del api, en este caso /api
+    //Se define la ruta por defecto del api, en este caso /
     app.use('/', router);
 
     router.use('/products', productsRouter);
