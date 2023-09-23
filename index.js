@@ -12,7 +12,7 @@ app.listen(port, () => {
   console.log(`application listening on port: ${port}`);
 });
 
-app.get('/api',
+app.get('/',
   (req, res) => {
     res.status(200).send("<h1>Welcome to site: here using <code>express.js</code> for implementation an <code>/api</code> demo <code>my-store</code></h1>");
   });
