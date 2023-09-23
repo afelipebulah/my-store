@@ -1,6 +1,6 @@
 const { faker } = require('@faker-js/faker');
 const { models } = require('../libs/sequelize');
-const { NOW } = require('sequelize');
+const { Op } = require('sequelize');
 const boom = require('@hapi/boom');
 
 const default_size = 5;
@@ -16,28 +16,58 @@ class ProductsService {
         let limit = size || default_size;
         if(size > max_size) limit = max_size;
       
-        let data = await this.getListProducts();
+        let produdcts = await models.Product.findAll();
 
-        if(data.length == 0){
+        let randomCategory;
+
+        if(produdcts.length == 0){
             for (let i = 1; i <= limit; i++) {
+                randomCategory = await this.getRandomCategory();
+
                 await this.createProduct({
                 name : faker.commerce.productName(),
                 description: faker.random.words(3),
                 price : faker.commerce.price(100, 999, 0),
-                image : faker.image.imageUrl()
+                image : faker.image.imageUrl(),
+                categoryId: randomCategory.id
               });
             }
         } else {
-            return data;
+            return produdcts;
         }
         
-        data = await this.getListProducts();
+        produdcts = await models.Product.findAll();
 
-        return data;
+        return produdcts;
     }
 
-    async getListProducts(size){
-        const data = await this.products.findAll({ include: ['category'] });
+    async getListProducts(query){
+        const options = {
+            include: ['category'],
+            order: [['id','asc']],
+            where: {}
+        };
+
+        const { limit, offset, price, price_min, price_max } = query;
+
+        if(limit && offset){
+            options.limit = limit;
+            options.offset = offset;
+        }
+
+        if(price){
+            options.where.price = price;
+        }
+
+        if(price_min && price_max) {
+            options.where.price = {
+                [Op.gte]: price_min,
+                [Op.lte]: price_max
+            }
+        }
+
+        const data = await this.products.findAll(options);
+
         return data;
     }
 
@@ -65,7 +95,27 @@ class ProductsService {
         const product = await this.searchProduct(id);
         const deletedProduct = await product.destroy();
         return deletedProduct;
-    }  
+    }
+
+    async getRandomCategory () {
+        const categories = await models.Category.findAll();
+        let randomCategory;
+
+        if(categories.length > 0){
+            const randomIndex = Math.floor(Math.random() * categories.length);
+            randomCategory = categories[randomIndex];
+
+            return randomCategory;
+
+        } else {
+            randomCategory = await models.Category.create({
+                name : faker.random.words(3),
+                image : faker.image.imageUrl()
+            });
+
+            return randomCategory;
+        }
+    }
 }
 
 module.exports = ProductsService;

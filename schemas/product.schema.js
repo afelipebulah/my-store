@@ -10,6 +10,12 @@ const categoryId = Joi.number().integer().positive();
 
 const size = Joi.number().integer().positive().min(1).max(100);
 
+const limit = Joi.number().integer().positive().min(1).max(100);
+const offset = Joi.number().integer().min(0);
+
+const price_min = Joi.number().integer().positive().min(100);
+const price_max = Joi.number().integer().positive().max(999);
+
 const createProductSchema = Joi.object({
     name: name.required(),
     description: description.required(),
@@ -39,7 +45,14 @@ const getProductSchema = Joi.object({
 });
 
 const getListProductSchema = Joi.object({
-    size: size
+    limit: limit,
+    offset: offset,
+    price: price,
+    price_min: price_min,
+    price_max: price_max.when('price_min', {
+        is: price_min.required(),
+        then: Joi.required()
+    })
 });
 
 const generateProductSchema = Joi.object({

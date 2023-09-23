@@ -27,3 +27,79 @@ Error
     at async Function.create (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\model.js:1362:12)
     at async OrderServices.addItem (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\order.services.js:66:27)
     at async C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\order.router.js:81:25
+Wed Sep 20 2023 22:27:04 GMT-0500 (hora estándar de Colombia) - producto no encontrado
+Error: producto no encontrado
+    at ProductsService.searchProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:64:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:106:30
+Wed Sep 20 2023 23:27:18 GMT-0500 (hora estándar de Colombia) - "offset" must be a positive number
+ValidationError: "offset" must be a positive number
+Wed Sep 20 2023 23:29:17 GMT-0500 (hora estándar de Colombia) - "limit" must be a positive number. "limit" must be greater than or equal to 1
+ValidationError: "limit" must be a positive number. "limit" must be greater than or equal to 1
+Fri Sep 22 2023 14:08:36 GMT-0500 (hora estándar de Colombia) - Cannot read properties of null (reading 'length')
+TypeError: Cannot read properties of null (reading 'length')
+    at UserService.searchUser (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\user.services.js:44:18)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\user.router.js:43:20
+Fri Sep 22 2023 14:09:53 GMT-0500 (hora estándar de Colombia) - Usuario no encontrado
+Error: Usuario no encontrado
+    at UserService.searchUser (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\user.services.js:45:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\user.router.js:43:20
+Fri Sep 22 2023 14:13:25 GMT-0500 (hora estándar de Colombia) - column Product.ASC does not exist
+Error
+    at Query.run (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.select (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Function.findAll (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\model.js:1140:21)
+    at async ProductsService.getListProducts (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:57:22)
+    at async C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:30:24
+Fri Sep 22 2023 14:19:56 GMT-0500 (hora estándar de Colombia) - column Product.desc does not exist
+Error
+    at Query.run (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.select (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Function.findAll (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\model.js:1140:21)
+    at async ProductsService.getListProducts (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:57:22)
+    at async C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:30:24
+Sat Sep 23 2023 08:25:17 GMT-0500 (hora estándar de Colombia) - "price_max" is required
+ValidationError: "price_max" is required
+Sat Sep 23 2023 08:30:02 GMT-0500 (hora estándar de Colombia) - "price_max" must be less than or equal to 999
+ValidationError: "price_max" must be less than or equal to 999
+Sat Sep 23 2023 08:32:23 GMT-0500 (hora estándar de Colombia) - "price_max" is required
+ValidationError: "price_max" is required
+Sat Sep 23 2023 08:35:34 GMT-0500 (hora estándar de Colombia) - Cannot read properties of undefined (reading 'length')
+TypeError: Cannot read properties of undefined (reading 'length')
+    at Order.get (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\db\models\order.model.js:34:22)
+    at Order.get (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\model.js:2168:41)
+    at Order.get (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\model.js:2190:33)
+    at Order.toJSON (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\model.js:2702:29)
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\response.js:1150:12)
+    at ServerResponse.json (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\response.js:271:14)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\order.router.js:43:23
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 23 2023 08:38:46 GMT-0500 (hora estándar de Colombia) - Cannot read properties of undefined (reading 'length')
+TypeError: Cannot read properties of undefined (reading 'length')
+    at Order.get (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\db\models\order.model.js:34:22)
+    at Order.get (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\model.js:2168:41)
+    at Order.get (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\model.js:2190:33)
+    at Order.toJSON (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\model.js:2702:29)
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\response.js:1150:12)
+    at ServerResponse.json (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\response.js:271:14)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\order.router.js:43:23
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 23 2023 08:39:34 GMT-0500 (hora estándar de Colombia) - Cannot read properties of undefined (reading 'length')
+TypeError: Cannot read properties of undefined (reading 'length')
+    at Order.get (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\db\models\order.model.js:34:22)
+    at Order.get (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\model.js:2168:41)
+    at Order.get (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\model.js:2190:33)
+    at Order.toJSON (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\sequelize\lib\model.js:2702:29)
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\response.js:1150:12)
+    at ServerResponse.json (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\node_modules\express\lib\response.js:271:14)
+    at C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\order.router.js:67:23
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

@@ -26,9 +26,8 @@ router.get('/generate',
 router.get('/list',
   validatorHandler(getListProductSchema, 'query'),
   async (req, res, next) => {
-    const { size } = req.query;
     try {
-      const products = await service.getListProducts(size);
+      const products = await service.getListProducts(req.query);
       res.status(200).json(products);
     } catch (error) {
       next(error);

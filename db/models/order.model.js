@@ -28,7 +28,9 @@ const OrderSchema = {
     field: 'create_at',
     defaultValue: Sequelize.NOW
   },
-  total: {
+  // Dato "virtual" calculado a partir de la data existente
+  // pendiente revisar error en el if (this.items.length > 0)
+  /*total: {
     type: DataTypes.VIRTUAL,
     get() {
       if (this.items.length > 0) {
@@ -38,7 +40,7 @@ const OrderSchema = {
       }
       return 0;
     }  
-  }
+  }*/
 }
 
 class Order extends Model {

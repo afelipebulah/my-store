@@ -41,10 +41,10 @@ class UserService {
 
     async searchUser(id){
         const data = await this.users.findByPk(id);
-        if (data.length == 0){
+        if (!data){
             throw boom.notFound('Usuario no encontrado');
         }
-        return data[0];
+        return data;
     }
 
     async createUser(body){        
