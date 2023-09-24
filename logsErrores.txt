@@ -114,3 +114,8 @@ SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:5432
     at emitErrorNT (node:internal/streams/destroy:157:8)
     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Sat Sep 23 2023 22:51:03 GMT-0500 (hora estándar de Colombia) - producto no encontrado
+Error: producto no encontrado
+    at ProductsService.searchProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:77:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:42:23
