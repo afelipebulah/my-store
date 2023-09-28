@@ -119,3 +119,21 @@ Error: producto no encontrado
     at ProductsService.searchProduct (C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\services\product.services.js:77:24)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async C:\Users\abula\OneDrive - Proteccion S.A\Udemy\Node\my-store\routes\products.router.js:42:23
+Tue Sep 26 2023 16:50:51 GMT-0500 (hora estándar de Colombia) - relation "products" does not exist
+Error
+    at Query.run (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.select (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Function.findAll (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\model.js:1140:21)
+    at async ProductsService.getListProducts (C:\Users\pipeb\Platzi\nodejs\my-store\services\product.services.js:69:22)
+    at async C:\Users\pipeb\Platzi\nodejs\my-store\routes\products.router.js:30:24
+Thu Sep 28 2023 15:59:37 GMT-0500 (hora estándar de Colombia) - no existe la relación «products»
+Error
+    at Query.run (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.select (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Function.findAll (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\model.js:1140:21)
+    at async ProductsService.getListProducts (C:\Users\pipeb\Platzi\nodejs\my-store\services\product.services.js:69:22)
+    at async C:\Users\pipeb\Platzi\nodejs\my-store\routes\products.router.js:30:24

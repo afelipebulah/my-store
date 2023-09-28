@@ -25,8 +25,8 @@ class ProductsService {
                 randomCategory = await this.getRandomCategory();
 
                 await this.createProduct({
-                name : faker.commerce.productName(),
-                description: faker.random.words(3),
+                name : faker.random.words(3),
+                description: faker.random.words(5),
                 price : faker.commerce.price(100, 999, 0),
                 image : faker.image.imageUrl(),
                 categoryId: randomCategory.id
