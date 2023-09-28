@@ -15,13 +15,19 @@ class UserService {
         let limit = size || default_size;
         if(size > max_size) limit = max_size;
 
-        let data = await this.users.findAll();
+        let data = await this.users.findAll({
+            attributes: { exclude: ['password'] }
+          });
 
         if(data.length === 0){
             for (let i = 1; i <= limit; i++) {
+                const emailRandom = faker.internet.email();
+                const passRandom = faker.internet.password();
+                console.log(`emailRandom: ${emailRandom}, passRandom: ${passRandom}`);
+
                 await this.users.create({
-                email : faker.internet.email(),
-                password : faker.internet.password(),
+                email : emailRandom,
+                password : passRandom,
                 role : 'customer'
               });
             }
@@ -29,18 +35,24 @@ class UserService {
             return data;
         }  
         
-        data = await this.users.findAll();
+        data = await this.users.findAll({
+            attributes: { exclude: ['password'] }
+          });
 
         return data;
     }
 
     async getListUsers(size){
-        const data = await this.users.findAll();
+        const data = await this.users.findAll({
+            attributes: { exclude: ['password'] }
+          });
         return data;
     }
 
     async searchUser(id){
-        const data = await this.users.findByPk(id);
+        const data = await this.users.findByPk(id,{
+            attributes: { exclude: ['password'] }
+          });
         if (!data){
             throw boom.notFound('Usuario no encontrado');
         }

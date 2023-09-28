@@ -137,3 +137,18 @@ Error
     at async Function.findAll (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\model.js:1140:21)
     at async ProductsService.getListProducts (C:\Users\pipeb\Platzi\nodejs\my-store\services\product.services.js:69:22)
     at async C:\Users\pipeb\Platzi\nodejs\my-store\routes\products.router.js:30:24
+Thu Sep 28 2023 17:20:20 GMT-0500 (hora estándar de Colombia) - Cliente no encontrado
+Error: Cliente no encontrado
+    at CustomerService.searchCustomer (C:\Users\pipeb\Platzi\nodejs\my-store\services\customer.services.js:50:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\pipeb\Platzi\nodejs\my-store\routes\customer.router.js:119:31
+Thu Sep 28 2023 17:20:35 GMT-0500 (hora estándar de Colombia) - Cliente no encontrado
+Error: Cliente no encontrado
+    at CustomerService.searchCustomer (C:\Users\pipeb\Platzi\nodejs\my-store\services\customer.services.js:50:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\pipeb\Platzi\nodejs\my-store\routes\customer.router.js:119:31
+Thu Sep 28 2023 17:32:21 GMT-0500 (hora estándar de Colombia) - Usuario no encontrado
+Error: Usuario no encontrado
+    at UserService.searchUser (C:\Users\pipeb\Platzi\nodejs\my-store\services\user.services.js:57:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\pipeb\Platzi\nodejs\my-store\routes\user.router.js:43:20

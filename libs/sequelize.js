@@ -5,7 +5,7 @@ const setupModels = require('./../db/models');
 
 let options = {
     dialect: config.dbEngine,
-    logging: !config.isProd
+    logging: config.isProd
 }
 
 if(config.isProd){
