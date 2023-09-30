@@ -1,6 +1,7 @@
 const express = require('express');
 const routerApi = require('./routes');
 const cors = require('cors');
+const passport = require('passport');
 const { logErrors, errorHandler, boomErrorHandler, ormErrorHandler } = require('./middlewares/error.handler');
 const validatorHandler = require('./middlewares/validator.handler');
 
@@ -30,9 +31,15 @@ const options = {
 
 //Se define middleware nativo de express para procesar .json en peticione POST/PATCH
 app.use(express.json());
+//middleware para manejo de cors
 app.use(cors(options));
+//middleware para manejo de login
+
+
+require('./utils/index');
 
 routerApi(app);
+
 
 //Se define el uso de los middlewares para manejo de errores después del routing
 app.use(logErrors);
@@ -40,3 +47,4 @@ app.use(validatorHandler);
 app.use(boomErrorHandler);
 app.use(ormErrorHandler);
 app.use(errorHandler);
+app.use(passport.initialize());

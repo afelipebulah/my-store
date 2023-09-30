@@ -59,6 +59,14 @@ class UserService {
         return data;
     }
 
+    async searchUserByEmail(email){
+        const data = await this.users.findOne({
+            where: { email }
+          });
+        
+        return data;
+    }
+
     async createUser(body){        
         const newUser = await this.users.create(body);
         

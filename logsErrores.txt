@@ -152,3 +152,105 @@ Error: Usuario no encontrado
     at UserService.searchUser (C:\Users\pipeb\Platzi\nodejs\my-store\services\user.services.js:57:24)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async C:\Users\pipeb\Platzi\nodejs\my-store\routes\user.router.js:43:20
+Sat Sep 30 2023 08:54:22 GMT-0500 (hora estándar de Colombia) - data and hash arguments required
+Error: data and hash arguments required
+    at Object.compare (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\bcrypt\bcrypt.js:208:17)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\bcrypt\promises.js:29:12
+    at new Promise (<anonymous>)
+    at Object.module.exports.promise (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\bcrypt\promises.js:20:12)
+    at Object.compare (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\bcrypt\bcrypt.js:204:25)
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:19:42)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 08:57:42 GMT-0500 (hora estándar de Colombia) - data and hash arguments required
+Error: data and hash arguments required
+    at Object.compare (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\bcrypt\bcrypt.js:208:17)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\bcrypt\promises.js:29:12
+    at new Promise (<anonymous>)
+    at Object.module.exports.promise (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\bcrypt\promises.js:20:12)
+    at Object.compare (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\bcrypt\bcrypt.js:204:25)
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:19:42)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 08:59:15 GMT-0500 (hora estándar de Colombia) - Login sessions require session support. Did you forget to use `express-session` middleware?
+Error: Login sessions require session support. Did you forget to use `express-session` middleware?
+    at SessionManager.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\sessionmanager.js:21:33)
+    at IncomingMessage.req.login.req.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\http\request.js:39:26)
+    at Strategy.strategy.success (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:256:13)
+    at verified (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport-local\lib\strategy.js:83:10)
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:24:13)
+Sat Sep 30 2023 09:03:22 GMT-0500 (hora estándar de Colombia) - Login sessions require session support. Did you forget to use `express-session` middleware?
+Error: Login sessions require session support. Did you forget to use `express-session` middleware?
+    at SessionManager.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\sessionmanager.js:21:33)
+    at IncomingMessage.req.login.req.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\http\request.js:39:26)
+    at Strategy.strategy.success (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:256:13)
+    at verified (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport-local\lib\strategy.js:83:10)
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:24:13)
+Sat Sep 30 2023 09:06:48 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:16:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 09:07:33 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:21:27)
+Sat Sep 30 2023 09:07:49 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:16:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 16:00:19 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:17:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 16:04:04 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:17:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 16:05:49 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:17:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 16:05:52 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:17:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 16:07:41 GMT-0500 (hora estándar de Colombia) - Cannot read properties of null (reading 'equals')
+TypeError: Cannot read properties of null (reading 'equals')
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:16:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 16:08:15 GMT-0500 (hora estándar de Colombia) - Cannot read properties of null (reading 'password')
+TypeError: Cannot read properties of null (reading 'password')
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:20:65)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 16:09:23 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:17:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 16:11:23 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:17:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 16:14:35 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:17:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 16:18:48 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:17:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 16:19:41 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:17:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 17:26:37 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:17:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 17:46:48 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:17:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sat Sep 30 2023 17:47:20 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:23:27)
+Sat Sep 30 2023 17:49:14 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:17:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
