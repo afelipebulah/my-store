@@ -254,3 +254,15 @@ Sat Sep 30 2023 17:49:14 GMT-0500 (hora estándar de Colombia) - Unauthorized
 Error: Unauthorized
     at Strategy._verify (C:\Users\pipeb\Platzi\nodejs\my-store\utils\auth\strategies\local.strategy.js:17:27)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Tue Oct 03 2023 15:32:59 GMT-0500 (hora estándar de Colombia) - Expected "options" to be a plain object.
+Error: Expected "options" to be a plain object.
+    at validate (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\jsonwebtoken\sign.js:44:11)
+    at validateOptions (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.module.exports [as sign] (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\jsonwebtoken\sign.js:171:5)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\routes\auth.router.js:18:25
+    at Layer.handle [as handle_request] (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\route.js:144:13)
+    at complete (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:271:13)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:278:15
+    at pass (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:428:14)
+    at Authenticator.transformAuthInfo (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:450:5)
