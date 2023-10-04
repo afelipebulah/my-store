@@ -1,5 +1,6 @@
 const express = require('express');
-
+const passport = require('passport');
+const { checkRoles } = require('./../middlewares/auth.handler');
 const validatorHandler = require('../middlewares/validator.handler');
 const {
   createOrderSchema,
@@ -22,6 +23,8 @@ router.get('/', (req, res) => {
 });
 
 router.get('/generate',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(generateOrderSchema, 'query'),
   async (req, res, next) => {
     const { size } = req.query;
@@ -35,6 +38,8 @@ router.get('/generate',
   });
 
 router.get('/list',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin', 'customer'),
   validatorHandler(getListOrderSchema, 'query'),
   async (req, res, next) => {
     const { size } = req.query;
@@ -47,6 +52,8 @@ router.get('/list',
   });
 
 router.get('/search/:id',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin', 'customer'),
   validatorHandler(getOrderSchema, 'params'),
   async (req, res, next) => {
     const { id } = req.params;
@@ -59,6 +66,8 @@ router.get('/search/:id',
   });
 
 router.post('/create',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin', 'customer'),
   validatorHandler(createOrderSchema, 'body'),
   async (req, res, next) => {
     const body = req.body;
@@ -74,6 +83,8 @@ router.post('/create',
   })
 
 router.post('/add-item',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin', 'customer'),
   validatorHandler(addItemSchema, 'body'),
   async (req, res, next) => {
     const body = req.body;
@@ -89,6 +100,8 @@ router.post('/add-item',
   })
 
 router.patch('/update/:id',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(getOrderSchema, 'params'),
   validatorHandler(updateOrderSchema, 'body'),
   async (req, res, next) => {
@@ -107,6 +120,8 @@ router.patch('/update/:id',
   })
 
 router.put('/update/:id',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(getOrderSchema, 'params'),
   validatorHandler(updateOrderSchema, 'body'),
   async (req, res, next) => {
@@ -125,6 +140,8 @@ router.put('/update/:id',
   })
 
 router.delete('/delete/:id',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(getOrderSchema, 'params'),
   async (req, res, next) => {
     const { id } = req.params;

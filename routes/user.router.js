@@ -1,7 +1,8 @@
 const express = require('express');
-
+const passport = require('passport');
+const { checkRoles } = require('./../middlewares/auth.handler');
 const validatorHandler = require('../middlewares/validator.handler');
-const {  createUserSchema, updatePartialUserSchema, updateUserSchema, getUserSchema, getListUserSchema, generateUserSchema } = require('../schemas/user.schema');
+const { createUserSchema, updatePartialUserSchema, updateUserSchema, getUserSchema, getListUserSchema, generateUserSchema } = require('../schemas/user.schema');
 const UserService = require('../services/user.services');
 
 const service = new UserService();
@@ -10,12 +11,13 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   res.json({
-    "route": "/users",
-    "version": "v0.0.1"
+    "route": "/users"
   });
 });
 
 router.get('/generate',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(generateUserSchema, 'query'),
   async (req, res) => {
     const { size } = req.query;
@@ -24,6 +26,8 @@ router.get('/generate',
   });
 
 router.get('/list',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(getListUserSchema, 'query'),
   async (req, res, next) => {
     const { size } = req.query;
@@ -32,10 +36,12 @@ router.get('/list',
       res.status(200).json(users);
     } catch (error) {
       next(error);
-    } 
+    }
   });
 
 router.get('/search/:id',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(getUserSchema, 'params'),
   async (req, res, next) => {
     const { id } = req.params;
@@ -48,6 +54,8 @@ router.get('/search/:id',
   });
 
 router.post('/create',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(createUserSchema, 'body'),
   async (req, res, next) => {
     const body = req.body;
@@ -63,6 +71,8 @@ router.post('/create',
   })
 
 router.patch('/update/:id',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(getUserSchema, 'params'),
   validatorHandler(updatePartialUserSchema, 'body'),
   async (req, res, next) => {
@@ -81,6 +91,8 @@ router.patch('/update/:id',
   })
 
 router.put('/update/:id',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(getUserSchema, 'params'),
   validatorHandler(updateUserSchema, 'body'),
   async (req, res, next) => {
@@ -99,6 +111,8 @@ router.put('/update/:id',
   })
 
 router.delete('/delete/:id',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(getUserSchema, 'params'),
   async (req, res, next) => {
     const { id } = req.params;

@@ -1,7 +1,8 @@
 const express = require('express');
-
+const passport = require('passport');
+const { checkRoles } = require('./../middlewares/auth.handler');
 const validatorHandler = require('../middlewares/validator.handler');
-const { 
+const {
   createCustomerSchema,
   updatePartialCustomerSchema,
   updateCustomerSchema,
@@ -18,12 +19,13 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   res.json({
-    "route": "/customers",
-    "version": "v0.0.1"
+    "route": "/customers"
   });
 });
 
 router.get('/generate',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(generateCustomerSchema, 'query'),
   async (req, res, next) => {
     const { size } = req.query;
@@ -33,10 +35,12 @@ router.get('/generate',
       res.status(200).json(customers);
     } catch (error) {
       next(error);
-    }    
+    }
   });
 
 router.get('/list',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(getListCustomerSchema, 'query'),
   async (req, res, next) => {
     const { size } = req.query;
@@ -45,10 +49,12 @@ router.get('/list',
       res.status(200).json(customers);
     } catch (error) {
       next(error);
-    } 
+    }
   });
 
 router.get('/search/:id',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(getCustomerSchema, 'params'),
   async (req, res, next) => {
     const { id } = req.params;
@@ -61,6 +67,8 @@ router.get('/search/:id',
   });
 
 router.post('/create',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(createCustomerSchema, 'body'),
   async (req, res, next) => {
     const body = req.body;
@@ -76,6 +84,8 @@ router.post('/create',
   })
 
 router.patch('/update/:id',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(getCustomerSchema, 'params'),
   validatorHandler(updatePartialCustomerSchema, 'body'),
   async (req, res, next) => {
@@ -94,6 +104,8 @@ router.patch('/update/:id',
   })
 
 router.put('/update/:id',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(getCustomerSchema, 'params'),
   validatorHandler(updateCustomerSchema, 'body'),
   async (req, res, next) => {
@@ -112,6 +124,8 @@ router.put('/update/:id',
   })
 
 router.delete('/delete/:id',
+  passport.authenticate('jwt', { session: false }),
+  checkRoles('admin'),
   validatorHandler(getCustomerSchema, 'params'),
   async (req, res, next) => {
     const { id } = req.params;

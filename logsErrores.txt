@@ -266,3 +266,150 @@ Error: Expected "options" to be a plain object.
     at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:278:15
     at pass (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:428:14)
     at Authenticator.transformAuthInfo (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:450:5)
+Tue Oct 03 2023 22:37:59 GMT-0500 (hora estándar de Colombia) - llave duplicada viola restricción de unicidad «categories_name_key»
+Error
+    at Query.run (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\sequelize.js:315:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PostgresQueryInterface.insert (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\dialects\abstract\query-interface.js:308:21)
+    at async Category.save (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\model.js:2490:35)
+    at async Function.create (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\sequelize\lib\model.js:1362:12)
+    at async CategoryServices.create (C:\Users\pipeb\Platzi\nodejs\my-store\services\category.services.js:50:27)
+    at async C:\Users\pipeb\Platzi\nodejs\my-store\routes\category.router.js:65:25
+Tue Oct 03 2023 23:21:15 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at C:\Users\pipeb\Platzi\nodejs\my-store\middlewares\auth.handler.js:29:23
+    at Layer.handle [as handle_request] (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\route.js:144:13)
+    at complete (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:271:13)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:278:15
+    at pass (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:428:14)
+    at Authenticator.transformAuthInfo (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:450:5)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:275:22
+    at IncomingMessage.req.login.req.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\http\request.js:44:13)
+    at JwtStrategy.strategy.success (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:256:13)
+Tue Oct 03 2023 23:21:25 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at C:\Users\pipeb\Platzi\nodejs\my-store\middlewares\auth.handler.js:29:23
+    at Layer.handle [as handle_request] (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\route.js:144:13)
+    at complete (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:271:13)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:278:15
+    at pass (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:428:14)
+    at Authenticator.transformAuthInfo (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:450:5)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:275:22
+    at IncomingMessage.req.login.req.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\http\request.js:44:13)
+    at JwtStrategy.strategy.success (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:256:13)
+Tue Oct 03 2023 23:21:32 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at C:\Users\pipeb\Platzi\nodejs\my-store\middlewares\auth.handler.js:29:23
+    at Layer.handle [as handle_request] (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\route.js:144:13)
+    at complete (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:271:13)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:278:15
+    at pass (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:428:14)
+    at Authenticator.transformAuthInfo (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:450:5)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:275:22
+    at IncomingMessage.req.login.req.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\http\request.js:44:13)
+    at JwtStrategy.strategy.success (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:256:13)
+Tue Oct 03 2023 23:27:42 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at C:\Users\pipeb\Platzi\nodejs\my-store\middlewares\auth.handler.js:29:23
+    at Layer.handle [as handle_request] (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\route.js:144:13)
+    at complete (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:271:13)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:278:15
+    at pass (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:428:14)
+    at Authenticator.transformAuthInfo (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:450:5)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:275:22
+    at IncomingMessage.req.login.req.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\http\request.js:44:13)
+    at JwtStrategy.strategy.success (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:256:13)
+Tue Oct 03 2023 23:27:46 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at C:\Users\pipeb\Platzi\nodejs\my-store\middlewares\auth.handler.js:29:23
+    at Layer.handle [as handle_request] (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\route.js:144:13)
+    at complete (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:271:13)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:278:15
+    at pass (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:428:14)
+    at Authenticator.transformAuthInfo (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:450:5)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:275:22
+    at IncomingMessage.req.login.req.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\http\request.js:44:13)
+    at JwtStrategy.strategy.success (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:256:13)
+Tue Oct 03 2023 23:27:50 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at C:\Users\pipeb\Platzi\nodejs\my-store\middlewares\auth.handler.js:29:23
+    at Layer.handle [as handle_request] (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\route.js:144:13)
+    at complete (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:271:13)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:278:15
+    at pass (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:428:14)
+    at Authenticator.transformAuthInfo (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:450:5)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:275:22
+    at IncomingMessage.req.login.req.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\http\request.js:44:13)
+    at JwtStrategy.strategy.success (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:256:13)
+Tue Oct 03 2023 23:27:54 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at C:\Users\pipeb\Platzi\nodejs\my-store\middlewares\auth.handler.js:29:23
+    at Layer.handle [as handle_request] (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\route.js:144:13)
+    at complete (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:271:13)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:278:15
+    at pass (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:428:14)
+    at Authenticator.transformAuthInfo (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:450:5)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:275:22
+    at IncomingMessage.req.login.req.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\http\request.js:44:13)
+    at JwtStrategy.strategy.success (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:256:13)
+Tue Oct 03 2023 23:28:11 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at C:\Users\pipeb\Platzi\nodejs\my-store\middlewares\auth.handler.js:29:23
+    at Layer.handle [as handle_request] (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\route.js:144:13)
+    at complete (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:271:13)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:278:15
+    at pass (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:428:14)
+    at Authenticator.transformAuthInfo (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:450:5)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:275:22
+    at IncomingMessage.req.login.req.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\http\request.js:44:13)
+    at JwtStrategy.strategy.success (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:256:13)
+Tue Oct 03 2023 23:40:15 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at C:\Users\pipeb\Platzi\nodejs\my-store\middlewares\auth.handler.js:29:23
+    at Layer.handle [as handle_request] (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\route.js:144:13)
+    at complete (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:271:13)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:278:15
+    at pass (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:428:14)
+    at Authenticator.transformAuthInfo (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:450:5)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:275:22
+    at IncomingMessage.req.login.req.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\http\request.js:44:13)
+    at JwtStrategy.strategy.success (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:256:13)
+Tue Oct 03 2023 23:40:45 GMT-0500 (hora estándar de Colombia) - Usuario no encontrado
+Error: Usuario no encontrado
+    at UserService.searchUser (C:\Users\pipeb\Platzi\nodejs\my-store\services\user.services.js:57:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\pipeb\Platzi\nodejs\my-store\routes\user.router.js:49:20
+Tue Oct 03 2023 23:41:02 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at C:\Users\pipeb\Platzi\nodejs\my-store\middlewares\auth.handler.js:29:23
+    at Layer.handle [as handle_request] (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\route.js:144:13)
+    at complete (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:271:13)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:278:15
+    at pass (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:428:14)
+    at Authenticator.transformAuthInfo (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:450:5)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:275:22
+    at IncomingMessage.req.login.req.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\http\request.js:44:13)
+    at JwtStrategy.strategy.success (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:256:13)
+Wed Oct 04 2023 00:05:30 GMT-0500 (hora estándar de Colombia) - Unauthorized
+Error: Unauthorized
+    at C:\Users\pipeb\Platzi\nodejs\my-store\middlewares\auth.handler.js:29:23
+    at Layer.handle [as handle_request] (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\express\lib\router\route.js:144:13)
+    at complete (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:271:13)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:278:15
+    at pass (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:428:14)
+    at Authenticator.transformAuthInfo (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\authenticator.js:450:5)
+    at C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:275:22
+    at IncomingMessage.req.login.req.logIn (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\http\request.js:44:13)
+    at JwtStrategy.strategy.success (C:\Users\pipeb\Platzi\nodejs\my-store\node_modules\passport\lib\middleware\authenticate.js:256:13)

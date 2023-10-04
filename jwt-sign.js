@@ -6,7 +6,7 @@ const payload = {
     role: 'customer'
 };
 const jwtConfig = {
-    expiresIn: '60s'
+    expiresIn: '60000'
 };
 
 function signToken(payload, secret, jwtConfig){

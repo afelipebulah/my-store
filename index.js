@@ -2,7 +2,10 @@ const express = require('express');
 const routerApi = require('./routes');
 const cors = require('cors');
 const passport = require('passport');
-const { logErrors, errorHandler, boomErrorHandler, ormErrorHandler } = require('./middlewares/error.handler');
+const { logErrors,
+  errorHandler,
+  boomErrorHandler,
+  ormErrorHandler } = require('./middlewares/error.handler');
 const validatorHandler = require('./middlewares/validator.handler');
 
 const app = express();
@@ -21,7 +24,7 @@ app.get('/',
 const whitelist = ['http://localhost:8080', 'https://myapp.co'];
 const options = {
   origin: (origin, callbak) => {
-    if(whitelist.includes(origin) || !origin){
+    if (whitelist.includes(origin) || !origin) {
       callbak(null, true);
     } else {
       callbak(new Error('no permitido'));
@@ -34,9 +37,7 @@ app.use(express.json());
 //middleware para manejo de cors
 app.use(cors(options));
 //middleware para manejo de login
-
-
-require('./utils/index');
+require('./utils/auth/index');
 
 routerApi(app);
 
